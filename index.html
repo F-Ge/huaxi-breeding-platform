@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Huaxi Precision Breeding Platform</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="hero">
+  <nav class="navbar">
+    <div class="logo">Huaxi<span>PBP</span></div>
+    <a class="nav-cta" href="#features">Explore Modules</a>
+  </nav>
+  <div class="hero-content">
+    <p class="eyebrow">Genomic Selection &amp; Breeding Decision Platform</p>
+    <h1>Huaxi Precision Breeding Platform</h1>
+    <p class="subhead">
+      An end-to-end pipeline for genomic data — from raw chip calls to
+      optimized mating decisions. Built for breeders and geneticists who
+      need accuracy at every step of the selection process.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#features">View Modules</a>
+      <a class="btn btn-secondary" href="#workflow">See Workflow</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="features" class="features">
+    <div class="section-heading">
+      <p class="eyebrow">Platform Modules</p>
+      <h2>Five modules, one pipeline</h2>
+      <p class="section-sub">Each module handles a distinct stage of the genomic selection workflow.</p>
+    </div>
+
+    <div class="feature-grid">
+
+      <article class="feature-card">
+        <div class="feature-index">01</div>
+        <h3>Chip Data Imputation</h3>
+        <p class="feature-tag">Variant-Specific SNV</p>
+        <p>
+          Reconstructs missing genotype calls from sparse SNP chip panels using
+          variant-specific imputation models, recovering higher-density genomic
+          resolution without a full re-genotyping cost.
+        </p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-index">02</div>
+        <h3>Quality Control</h3>
+        <p class="feature-tag">MAF &middot; HWE &middot; Call Rate</p>
+        <p>
+          Filters genotype data on Minor Allele Frequency thresholds, tests markers
+          for departure from Hardy-Weinberg Equilibrium, and enforces per-sample and
+          per-marker call rate cutoffs before any downstream analysis runs.
+        </p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-index">03</div>
+        <h3>Genomic Prediction Module</h3>
+        <p class="feature-tag">GEBV Estimation</p>
+        <p>
+          Estimates genomic breeding values directly from marker data, giving
+          breeders a selection signal earlier and with greater accuracy than
+          pedigree-based methods alone.
+        </p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-index">04</div>
+        <h3>Model Selection</h3>
+        <p class="feature-tag">GBLUP &middot; BayesB &middot; BayesR</p>
+        <p>
+          Lets users choose and compare prediction models — GBLUP, Bayes B, or
+          Bayes R — to match the genetic architecture of the trait being selected
+          for, from polygenic to major-gene-driven.
+        </p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-index">05</div>
+        <h3>Mate Allocation Service</h3>
+        <p class="feature-tag">Optimal Mating</p>
+        <p>
+          Generates recommended mating pairs that balance expected genetic gain
+          against inbreeding risk, turning prediction output into an actionable
+          breeding plan.
+        </p>
+      </article>
+
+      <article class="feature-card feature-card-more">
+        <div class="feature-index">+</div>
+        <h3>More modules coming</h3>
+        <p>
+          This platform is under active development. Additional modules and
+          detailed documentation will be added as the pipeline matures.
+        </p>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="workflow" class="workflow">
+    <div class="section-heading">
+      <p class="eyebrow">Pipeline</p>
+      <h2>How the modules connect</h2>
+    </div>
+    <div class="workflow-steps">
+      <div class="workflow-step">
+        <span class="workflow-num">1</span>
+        <p>Chip Data Imputation</p>
+      </div>
+      <div class="workflow-arrow">&rarr;</div>
+      <div class="workflow-step">
+        <span class="workflow-num">2</span>
+        <p>Quality Control</p>
+      </div>
+      <div class="workflow-arrow">&rarr;</div>
+      <div class="workflow-step">
+        <span class="workflow-num">3</span>
+        <p>Genomic Prediction</p>
+      </div>
+      <div class="workflow-arrow">&rarr;</div>
+      <div class="workflow-step">
+        <span class="workflow-num">4</span>
+        <p>Model Selection</p>
+      </div>
+      <div class="workflow-arrow">&rarr;</div>
+      <div class="workflow-step">
+        <span class="workflow-num">5</span>
+        <p>Mate Allocation</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>Huaxi Precision Breeding Platform</p>
+  <p class="footer-sub">Genomic selection tools for precision breeding.</p>
+</footer>
+
+</body>
+</html>
