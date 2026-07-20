@@ -377,13 +377,10 @@ function renderQCResults(results) {
   var passCount = results.filter(function (r) { return r.pass; }).length;
   var failCount = results.length - passCount;
 
-  summaryEl.innerHTML =
-    '<strong>' + results.length + '</strong> ' +
-    t('qc.summary')
-      .replace('{n} SNPs analyzed — ', '')
-      .replace('已分析 {n} 个位点 — ', '')
-      .replace('{pass}', '<strong>' + passCount + '</strong>')
-      .replace('{fail}', '<strong>' + failCount + '</strong>');
+  summaryEl.innerHTML = t('qc.summary')
+    .replace('{n}', '<strong>' + results.length + '</strong>')
+    .replace('{pass}', '<strong>' + passCount + '</strong>')
+    .replace('{fail}', '<strong>' + failCount + '</strong>');
 
   bodyEl.innerHTML = '';
   results.forEach(function (r) {
